@@ -1,0 +1,32 @@
+[
+  {
+    "id": "project-1",
+    "title": "Customer Churn Prediction",
+    "description": "End-to-end MLOps pipeline for predicting customer churn using modern tools and best practices.",
+    "image": "/images/Project1.jpg",
+    "tags": ["MLOps", "FastAPI", "Docker", "DVC", "MLflow", "Airflow"],
+    "status": "completed",
+    "githubLink": "https://github.com/kalanakanishkaa",
+    "liveLink": "https://github.com/kalanakanishkaa"
+  },
+  {
+    "id": "project-2",
+    "title": "E-commerce Analytics Project",
+    "description": "Comprehensive data analysis project analyzing e-commerce customer behavior and sales trends.",
+    "image": "/images/Project2.jpg",
+    "tags": ["Python", "Pandas", "Matplotlib", "Power BI", "Data Analysis"],
+    "status": "completed",
+    "githubLink": "https://github.com/kalanakanishkaa/ecommerce-analytics-project",
+    "liveLink": ""
+  },
+  {
+    "id": "project-3",
+    "title": "Coming Soon",
+    "description": "Another exciting project in the works. Check back soon!",
+    "image": "/images/project3.jpg",
+    "tags": ["Web Dev", "UI/UX", "JavaScript"],
+    "status": "inprogress",
+    "githubLink": "https://github.com/kalanakanishkaa",
+    "liveLink": ""
+  }
+]
