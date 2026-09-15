@@ -5,9 +5,12 @@ export default function About() {
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
-    setAnimate(false);
-    const timer = setTimeout(() => setAnimate(true), 100);
-    return () => clearTimeout(timer);
+    const timer1 = setTimeout(() => setAnimate(false), 0);
+    const timer2 = setTimeout(() => setAnimate(true), 100);
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+    };
   }, [activeTab]);
 
   const skillsData = {

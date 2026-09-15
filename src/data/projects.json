@@ -6,8 +6,8 @@
     "image": "/images/Project1.jpg",
     "tags": ["MLOps", "FastAPI", "Docker", "DVC", "MLflow", "Airflow"],
     "status": "completed",
-    "githubLink": "https://github.com/kalanakanishkaa",
-    "liveLink": "https://github.com/kalanakanishkaa"
+    "githubLink": "https://github.com/your-username/churn-prediction",
+    "liveLink": ""
   },
   {
     "id": "project-2",
@@ -16,17 +16,17 @@
     "image": "/images/Project2.jpg",
     "tags": ["Python", "Pandas", "Matplotlib", "Power BI", "Data Analysis"],
     "status": "completed",
-    "githubLink": "https://github.com/kalanakanishkaa/ecommerce-analytics-project",
+    "githubLink": "https://github.com/your-username/ecommerce-analytics",
     "liveLink": ""
   },
   {
     "id": "project-3",
-    "title": "Coming Soon",
-    "description": "Another exciting project in the works. Check back soon!",
-    "image": "/images/project3.jpg",
-    "tags": ["Web Dev", "UI/UX", "JavaScript"],
-    "status": "inprogress",
-    "githubLink": "https://github.com/kalanakanishkaa",
+    "title": "AWS ECS Cloud Deployment Pipeline",
+    "description": "Deployed containerized microservices to AWS Elastic Container Service (ECS) utilizing AWS Fargate for serverless scaling. Provisioned infrastructure with Terraform and built automated CI/CD deployment pipelines via GitHub Actions.",
+    "image": "/images/Project3.jpg",
+    "tags": ["AWS ECS", "Docker", "Terraform", "GitHub Actions", "CloudWatch"],
+    "status": "completed",
+    "githubLink": "https://github.com/kalanakanishkaa/aws-ecs-deployment",
     "liveLink": ""
   }
 ]

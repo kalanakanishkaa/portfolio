@@ -3,19 +3,13 @@ import initialProjects from '../data/projects.json';
 import AddProjectModal from '../components/AddProjectModal';
 
 export default function Projects() {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState(initialProjects);
   const [searchTerm, setSearchTerm] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    const stored = localStorage.getItem('my-projects');
-    if (stored) {
-      setProjects(JSON.parse(stored));
-    } else {
-      setProjects(initialProjects);
-      localStorage.setItem('my-projects', JSON.stringify(initialProjects));
-    }
-  }, []);
+    setProjects(initialProjects);
+  }, [initialProjects]);
 
   const handleAddProject = (newProject) => {
     const updated = [newProject, ...projects];
@@ -93,9 +87,14 @@ export default function Projects() {
                   <div className="project-header">
                     <h3>{project.title}</h3>
                     <span className={`project-status ${project.status === 'completed' ? 'completed' : 'inprogress'}`}>
-                      {project.status === 'completed' ? 'Completed' : 'In Progress'}
+                      {project.status === 'completed' ? (
+                        <><i className="fas fa-check-circle" style={{marginRight: '4px'}}></i> Completed</>
+                      ) : 'In Progress'}
                     </span>
                   </div>
+                  <p className="project-description" style={{ fontSize: '14px', color: 'var(--text-muted)', marginBottom: '15px', lineHeight: '1.6' }}>
+                    {project.description}
+                  </p>
                   <div className="project-tags">
                     {project.tags.map((tag, i) => (
                       <span className="tag" key={i}>{tag}</span>

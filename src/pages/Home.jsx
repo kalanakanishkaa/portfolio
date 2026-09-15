@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
+const words = ['Data Scientist', 'Web Developer', 'UI/UX Designer', 'Problem Solver'];
+
 export default function Home() {
-  const words = ['Data Scientist', 'Web Developer', 'UI/UX Designer', 'Problem Solver'];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
@@ -23,8 +24,10 @@ export default function Home() {
     if (!isDeleting && currentText === activeWord) {
       timer = setTimeout(() => setIsDeleting(true), 1500);
     } else if (isDeleting && currentText === '') {
-      setIsDeleting(false);
-      setCurrentWordIndex((prev) => (prev + 1) % words.length);
+      timer = setTimeout(() => {
+        setIsDeleting(false);
+        setCurrentWordIndex((prev) => (prev + 1) % words.length);
+      }, 50);
     }
 
     return () => clearTimeout(timer);
@@ -58,13 +61,28 @@ export default function Home() {
                 <i className="fab fa-instagram"></i>
               </a>
             </div>
-            <a href="#" className="btn-download">Download CV</a>
+            <a
+              href="/Kalana_Kanishka_CV.pdf"
+              download="Kalana_Kanishka_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-download"
+            >
+              <svg 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              <span>Download CV</span>
+            </a>
           </div>
           <div className="home-image" data-aos="fade-left">
             <div className="profile-card-wrapper">
               <div className="profile-card">
                 <div className="profile-card-img">
-                  <img src="/images/profile.jpg.jpg" alt="Profile Picture" />
+                  <img src="/images/profile.jpg" alt="Profile Picture" />
                 </div>
                 <div className="profile-card-tag">
                   <span className="tag-dot"></span>
