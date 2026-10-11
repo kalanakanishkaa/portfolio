@@ -28,5 +28,15 @@
     "status": "completed",
     "githubLink": "https://github.com/kalanakanishkaa/aws-ecs-deployment",
     "liveLink": ""
+  },
+  {
+    "id": "project-4",
+    "title": "Smart Expense Tracker",
+    "description": "An AI-powered personal finance management app that automates spending analytics, categorizes daily transactions, and provides real-time budget forecasting with interactive visual dashboards.",
+    "image": "/images/expense-tracker.jpg",
+    "tags": ["React", "Node.js", "MongoDB", "Tailwind CSS", "Chart.js"],
+    "status": "completed",
+    "githubLink": "https://github.com/your-username/smart-expense-tracker",
+    "liveLink": ""
   }
 ]
